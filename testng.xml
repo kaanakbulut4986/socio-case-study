@@ -1,0 +1,14 @@
+<suite name="Socio Test Suite" verbose="1" parallel="false">
+    <test name="Create Post For Event">
+        <parameter name="post-content" value="Welcome To Test Automation Assessment Event!" />
+        <parameter name="email" value="testautomation@socio.events" />
+        <parameter name="password" value="ta12345" />
+        <classes>
+            <class name="com.socio.test.event.EventTests">
+                <methods>
+                    <include name="userShouldCreatePostForEvent" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
